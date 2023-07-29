@@ -180,3 +180,44 @@ const y = parseInt(prompt('Ingrese coordenada y'));
                 }
             }
         }
+
+        document.write("<br>")
+
+
+//.5
+
+const name2=(prompt("Nombre del empleado: "))
+
+let sueldo=parseInt(prompt("Sueldo del empleado: "))
+
+const antiguedad=parseInt(prompt("Antiguedad del empleado: "))
+
+const aumentoa= sueldo*0.20
+
+const aumentob= sueldo*0.05
+
+
+if (sueldo<500 && antiguedad>=10) {
+    sueldo=sueldo+aumentoa
+    document.write(`El sueldo del empleado ${name2} teniendo en cuenta su antiguedad de ${antiguedad} años, con el aumento correspondiente, quedaria en un total de ${sueldo}$`)
+} else if (sueldo<500 && antiguedad<10) {
+    sueldo=sueldo+aumentob
+    document.write(`El sueldo del empleado ${name2} teniendo en cuenta su antiguedad de ${antiguedad} años, con el aumento correspondiente, quedaria en un total de ${sueldo}$`)
+
+} else document.write(`El sueldo del empleado ${name2} no cumple ninguna condicion de aumento, quedando en en un total de ${sueldo}$`)
+
+
+document.write("<br>")
+
+
+
+//ejercicio 10
+
+
+const lastnum=parseInt(prompt("Ingrese el primer numero del trio: "))
+const lastnum2=parseInt(prompt("Ingrese el segundo numero del trio: "))
+const lastnum3=parseInt(prompt("Ingrese el tercer numero del trio: "))
+
+if (lastnum<10||lastnum2<10||lastnum3<10) {
+    document.write("Alguno de los numeros ingresados es menor a 100")
+}
